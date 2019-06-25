@@ -1,0 +1,165 @@
+body {
+  /*body have padding and or margin*/
+  padding: 10px;
+  margin: 10px;
+}
+
+header {
+  /*styled header/ The header should have a background color, background image (using a local image), and padding */
+  background: #c0c0c0 url("../../assets/images/flywheel.jpg");
+  /*Shorthand rules background-color/image*/
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 10px;
+  height: 150px;
+}
+
+header h1 {
+  font-family: Arial, Helvetica, Tahoma, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+/*The navigation links (and only the links in the navigation) should be styled with a new display,
+ margin, border-radius, text-decoration, and padding*/
+
+header nav a {
+  /*ONLY the links in navigation are styled,*/
+  background-color: rgba(165, 160, 160, 0.5);
+  padding: 10px 70px;
+  border-radius: 10px;
+  margin: auto;
+  margin-left: 40px;
+  margin-top: 30px;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+header nav {
+  width: 100%;
+}
+
+/*When mouse hovers over link*/
+
+header nav a:hover {
+  background-color: rgba(165, 160, 160, 1);
+}
+
+.active {
+  /*the “active” class is styled to clearly show which page is the current page*/
+  background-color: #ffffff;
+}
+
+.right {
+  width: 73%;
+  float: right;
+}
+
+.right h2 {
+  color: #2d01a8;
+  font-size: 1.6em;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.left {
+  /*the two sections are side-by-side*/
+  width: 25%;
+  float: left;
+  background-color: seagreen;
+  padding-bottom: 20px;
+}
+
+.left img {
+  /*the images are styled-The images should be part of the page now. 
+  In addition, they should have a border, be centered horizontally, and have
+   vertical (top/bottom) space between them and the other images.*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  width: 90%;
+  border: black solid 3px;
+}
+/*****TABLE*****/
+/*Set the table color, border, and spacing...*/
+
+table {
+	color: #06425C;
+	border-spacing: 0;
+	background-color: rgb(201, 236, 201);
+	border: 3px solid #fff;
+	border-bottom: #fff 6px;
+	width: 90%;
+	margin: auto;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	/*multiple font family*/
+	border-radius: 10px 10px 0 0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	/*table shadow */
+}
+
+/*Format common heading and element attributes*/
+
+td {
+	/*opacity 0.6-0.8 the table, except the thead*/
+	opacity: 0.6;
+	border-radius: 2px;
+}
+
+tr:hover>td {
+	/*when hover over a th, all the row turn opacity to 1*/
+	opacity: 1.0;
+}
+
+th:first-child {
+	/* border radius for the header*/
+	border-radius: 10px 0 0 0;
+}
+
+th:last-child {
+	/* border radius for the header*/
+	border-radius: 0 10px 0 0;
+}
+
+th, td {
+	margin: 2px;
+	text-align: center;
+	padding: 7px;
+	border-bottom: 3px solid #fff;
+	/*th and td borders*/
+	border-right: 3px solid #fff;
+	font-size: 14px;
+	line-height: 25px;
+	/*line height*/
+}
+
+th {
+	/*table headings*/
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+	background: rgb(82, 163, 106);
+	text-shadow: 3px 3px 5px #eee;
+	/*text shadow*/
+}
+
+th:first-child, td:first-child {
+	width: 50%;
+	text-align: left;
+	/*first column aligned to left*/
+}
+
+th, td:nth-child(2), td:last-child {
+	/*2nd column width 25%*/
+	width: 25%;
+	text-align: center;
+}
